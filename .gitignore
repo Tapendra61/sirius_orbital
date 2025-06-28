@@ -1,0 +1,57 @@
+# === CLion / CMake / JetBrains ===
+.idea/
+cmake-build-*/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# CLion logs
+.clion-log/
+.clion/
+
+# Auto-generated executable and libs
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.app
+*.pdb
+
+# Build artifacts
+*.obj
+*.o
+*.lo
+
+# Dependency folders
+/deps/libs/*
+!/deps/libs/.gitkeep  # Keep this if you want the folder to stay in Git
+
+# STB or other downloaded libs
+**/stb/*.o
+**/stb/*.obj
+
+# User/project-specific files
+*.user
+*.iml
+*.ipr
+*.iws
+
+# System/OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Backup/swap files
+*~
+*.swp
+*.bak
+*.tmp
