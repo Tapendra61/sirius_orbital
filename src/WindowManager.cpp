@@ -15,8 +15,12 @@ void WindowManager::Run() {
 	while(!WindowShouldClose()) {
 		ClearBackground(clear_color);
 		BeginDrawing();
+			BeginMode2D(camera_manager.GetCamera());
+
 			Update();
 			LateUpdate();
+
+			EndMode2D();
 		EndDrawing();
 	}
 }
@@ -30,5 +34,5 @@ void WindowManager::Update() {
 }
 
 void WindowManager::LateUpdate() {
-
+	DrawCircle(0, 0, 100, BLACK);
 }

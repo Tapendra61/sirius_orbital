@@ -6,13 +6,16 @@
 #define SIRIUS_ORBITAL_WINDOWMANAGER_H
 
 #include"raylib/raylib.h"
-
+#include"camera/CameraManager.h"
 
 class WindowManager {
     const int WIDTH;
 	const int HEIGHT;
 	const char* TITLE;
     int FPS;
+
+public:
+	CameraManager camera_manager;
 
 public:
 	WindowManager(const int width, const int height, const char* title, const int fps) : WIDTH(width), HEIGHT(height), TITLE(title), FPS(fps) {};
