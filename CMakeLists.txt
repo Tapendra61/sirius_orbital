@@ -1,9 +1,14 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.29)
 project(sirius_orbital)
 
 set(CMAKE_CXX_STANDARD 26)
 
-file(GLOB SRC_FILES "${CMAKE_SOURCE_DIR}/src/*.cpp")
+set(SRC_FILES
+		src/main.cpp
+		src/WindowManager.cpp
+		src/CameraManager.cpp
+		src/UiManager.cpp
+)
 
 add_executable(sirius_orbital ${SRC_FILES})
 

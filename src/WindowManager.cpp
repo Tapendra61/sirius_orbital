@@ -21,6 +21,9 @@ void WindowManager::Run() {
 			LateUpdate();
 
 			EndMode2D();
+
+			ui_manager.RenderEntityPanel();
+
 		EndDrawing();
 	}
 }
@@ -30,9 +33,17 @@ void WindowManager::Start() {
 }
 
 void WindowManager::Update() {
-
+	camera_manager.MoveCamera();
 }
 
 void WindowManager::LateUpdate() {
-	DrawCircle(0, 0, 100, BLACK);
+	DrawCircle(540, 360, 100, BLACK);
+}
+
+int WindowManager::GetWidth() {
+	return WIDTH;
+}
+
+int WindowManager::GetHeight() {
+	return HEIGHT;
 }

@@ -21,3 +21,18 @@ CameraManager::CameraManager(Vector2 offset, Vector2 target, float rotation, flo
 Camera2D CameraManager::GetCamera() {
 	return camera;
 }
+
+void CameraManager::MoveCamera() {
+	if(IsKeyDown(KEY_W)) {
+		camera.offset.y += 1;
+	}
+	if(IsKeyDown(KEY_S)) {
+		camera.offset.y -= 1;
+	}
+	if(IsKeyDown(KEY_A)) {
+		camera.offset.x += 1;
+	}
+	if(IsKeyDown(KEY_D)) {
+		camera.offset.x -= 1;
+	}
+}

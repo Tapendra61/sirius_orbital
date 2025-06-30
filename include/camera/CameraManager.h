@@ -1,9 +1,7 @@
 //
 // Created by Tapendra on 6/29/2025.
 //
-
-#ifndef SIRIUS_ORBITAL_CAMERAMANAGER_H
-#define SIRIUS_ORBITAL_CAMERAMANAGER_H
+#pragma once
 
 #include"raylib/raylib.h"
 
@@ -16,8 +14,6 @@ public:
 	CameraManager();
 	CameraManager(Vector2 offset, Vector2 target, float rotation, float zoom);
 	Camera2D GetCamera();
+	void MoveCamera();
 
 };
-
-
-#endif //SIRIUS_ORBITAL_CAMERAMANAGER_H
