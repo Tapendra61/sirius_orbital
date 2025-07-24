@@ -4,7 +4,7 @@
 
 #include"ui/UiManager.h"
 #define RAYGUI_IMPLEMENTATION
-#include"raygui/raygui.h"
+#include"raylib/raygui.h"
 
 UiManager::UiManager() {
 	enableEntityPanel = true;

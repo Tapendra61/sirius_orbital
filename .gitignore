@@ -1,57 +1,66 @@
-# === CLion / CMake / JetBrains ===
-.idea/
-cmake-build-*/
+# Ignore build outputs
+[Bb]uild*/
+x64/
+x86/
+Release*/
+Debug*/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.ipch
+*.iobj
+*.log
+*.pch
+*.idb
 
-# CMake generated files
+# Ignore temporary files
+*.tlog
+*.lastbuildstate
+*.db
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# Ignore Visual Studio files
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore CMake (if used)
 CMakeFiles/
 CMakeCache.txt
-Makefile
 cmake_install.cmake
-compile_commands.json
+Makefile
 
-# CLion logs
-.clion-log/
-.clion/
-
-# Auto-generated executable and libs
-*.exe
-*.dll
-*.lib
-*.a
-*.so
-*.dylib
-*.app
-*.pdb
-
-# Build artifacts
-*.obj
-*.o
-*.lo
-
-# Dependency folders
-/deps/libs/*
-!/deps/libs/.gitkeep  # Keep this if you want the folder to stay in Git
-
-# STB or other downloaded libs
-**/stb/*.o
-**/stb/*.obj
-
-# User/project-specific files
-*.user
-*.iml
-*.ipr
-*.iws
-
-# System/OS files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Logs
-*.log
-
-# Backup/swap files
+# Ignore backup / autosave files
 *~
-*.swp
-*.bak
 *.tmp
+*.bak
+*.swp
+*.sdf
+
+# Raylib notes
+# Keep raylib binaries (e.g., .lib, .dll) if manually added
+# Do NOT exclude *.lib or *.dll unless you want to!
+# So we DO NOT include *.lib, *.dll in ignore list
+
+# Optional: Ignore your own build directory if custom
+build/
+
+# Keep assets, libraries, source
+!*.h
+!*.cpp
+!*.c
+!*.hpp
+!*.inl
+!*.rc
+!*.lib
+!*.dll
+!*.png
+!*.wav
+!*.ttf
+!*.glsl
